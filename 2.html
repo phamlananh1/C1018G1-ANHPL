@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var index = prompt("Nhap so nguyen: ");
+    var a = prompt("Nhap vao mang: ");
+    var arr = a.split(',');
+    function tryRemoveFromArray(arr, index) {
+        for (let i = 0; i < arr.length; i++) {
+            if (index === arr[i])
+                arr.splice(i,1);
+        }
+    }
+    alert(arr);
+</script>
+</body>
+</html>
